@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Calculator</title>
 </head>
-<body bgcolor="pink">
+<body bgcolor="pink" align="center" >
     <h1>Basic Calculator</h1>
     <!-- parseInt(num1.value)+(op.value)+parseInt(num2.value) -->
     <form action="" oninput="result.value=(op.value=='+'?(parseInt(num1.value)+parseInt(num2.value)):
                                         op.value=='-'?(parseInt(num1.value)-parseInt(num2.value)):
                                         op.value=='*'?(parseInt(num1.value)*parseInt(num2.value)):
-                                        op.value=='/'?((parseInt(num2.value))!=0?(parseInt(num1.value)/parseInt(num2.value)):'Error'):'Invalid')">
-        <input type="number" id="num1" placeholder="Enter your 1st number">
-        
+                                        op.value=='/'?((parseInt(num2.value))!=0?(parseInt(num1.value)/parseInt(num2.value)):'Error'):'Invalid')"  >
+        <input type="number" id="num1" placeholder="Enter your 1st number" >
+        <br><br>
         <select name="operator" id="op">
             <option value="">Select Operation</option>
             <option value="+">+</option>
@@ -21,10 +21,12 @@
             <option value="*">*</option>
             <option value="/">/</option>
         </select>
-        
+        <br><br>
         <input type="number" id="num2" placeholder="Enter your 2nd number">
          <!-- <input type="range" value="0" max="100" id="num2"> -->
+        <br><br>
         =
+        <br><br>
         <output id="result"></output>
         
         <!-- <button type="submit">Submit</button> -->
